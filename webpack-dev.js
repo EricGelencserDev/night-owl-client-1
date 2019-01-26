@@ -7,7 +7,7 @@ module.exports = merge(common, {
       historyApiFallback: true,
       proxy: {
           '/api': {
-              target: 'http://localhost:9000',
+              target: 'http://localhost:3000',
               secure: false
           }
       }
@@ -15,7 +15,7 @@ module.exports = merge(common, {
   externals: {
       // global app config object
       config: JSON.stringify({
-          apiUrl: 'http://localhost:8080/api/v1',
+          apiUrl: 'http://localhost:8080/api',
           titleId: 'C3CB'
       })
   }
